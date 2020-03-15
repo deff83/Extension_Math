@@ -1,12 +1,9 @@
 # Расширение создание файла Word решения с сайта https://math.semestr.ru/
 
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/deff83/Extension_Math?style=plastic) [![Downloads](https://img.shields.io/github/downloads/deff83/Extension_Math/v1.0.0/total)](https://github.com/deff83/Extension_Math/releases/download/v1.0.0/Def83MathSemestr.crx)
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/deff83/Extension_Math?style=plastic) ![GitHub Releases](https://img.shields.io/github/downloads/deff83/Extension_Math/v1.0.0/total)
-
-
-
-###Описание
+### Описание
 
 Расширение представляет собой скрипт предназначенный для преобразования решения с сайта https://math.semestr.ru/ в формат word.
 
