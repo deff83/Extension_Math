@@ -1,0 +1,23 @@
+body{
+	background-image: url('../images/fon5.jpg');
+	background-repeat:repeat;
+}
+
+.center{
+	text-align:center;
+}
+
+.logo{
+	width:30%;
+}
+
+#textDeff{
+	font-size:72pt;
+	font-family: "Lobster";
+}
+
+.logo_mouse{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
