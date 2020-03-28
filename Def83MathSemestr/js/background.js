@@ -48,6 +48,15 @@ chrome.extension.onMessage.addListener(function(request, sender, f_callback){
 		}
 		
 	}
+	if(request.message=='buttonWordProb'){
+		try{
+			bool_getWord = true;
+		}catch(exc){
+			f_callback("error_count_actions");
+		}
+		
+	}
+	
 	
 	if(request.message=='timer'){
 		if (bool_getWord){
@@ -70,10 +79,17 @@ chrome.extension.onMessage.addListener(function(request, sender, f_callback){
 	}
 	
 	if (request.message=='content_word_html'){
+		try{
 		getHtmlWord(request);
 		chrome.extension.sendMessage(new ObjPage('done' , null, null, null), function (message){
 				
 		});
+		}catch(exc){
+		chrome.extension.sendMessage(new ObjPage('doneExc' , null, null, null), function (message){
+				
+		});
+		}
+		
 	}
 	
 	
