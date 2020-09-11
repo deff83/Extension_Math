@@ -838,6 +838,9 @@ function formul_preobr(text_code){ //преобразование формул
 				case "omega"://ω
 					text += "{\\mr\\mscr0\\msty2 \\u969\\'3f}";
 					break;
+				case "over"://ω
+					text += "{/}";
+					break;
 				
 				case "Gamma"://Γ
 					text += "{\\mr\\mscr0\\msty2 \\'c3}";
@@ -1278,6 +1281,10 @@ function proverka_operand(text_code){//запись в массив
 	if (text_code.substring(0, 6)=="\\Omega"){
 		skachek = 6;
 		return "Omega";
+	}
+	if (text_code.substring(0, 5)=="\\over"){
+		skachek = 6;
+		return "over";
 	}
 	
 	
