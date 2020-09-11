@@ -37,6 +37,9 @@ function getHtmlWord(html){
 	
 	text_rtf += "}}";//закрываем открытый в самом начале скобки
 	
+	console.log(text_rtf)
+	
+	
 	writeFile("Deff83.rtf", text_rtf); 
 }
 
@@ -300,6 +303,8 @@ text += "\\clbrdrt\\brdrs \\clbrdrl\\brdrs \\clbrdrb\\brdrs \\clbrdrr\\brdrs "; 
 
 function preobraz(text_code){
 	let text = text_code;
+	
+	text = text.replace(new RegExp("#", 'g'), "{$} ");//link for button downlod file
 	
 	text = text.replace(new RegExp("<b>", 'g'), "{\\b ");
 	text = text.replace(new RegExp("</b>", 'g'), "}");
